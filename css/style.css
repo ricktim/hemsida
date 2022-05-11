@@ -174,11 +174,11 @@ h1, h2, h3{
     width: 50px;
     margin: 0 auto 1.7rem auto;
 }
-/* portfolio */
-.portfolio-grid > div{
+/* photo */
+.photo-grid > div{
     transition: var(--transition);
 }
-.portfolio-grid > div:hover{
+.photo-grid > div:hover{
     transform: scale(0.9);
 }
 
@@ -225,26 +225,26 @@ h1, h2, h3{
     background-color: #000;
 }
 
-#insta{
+#team{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
     min-height: 65vh;
 }
-#insta .title h2{
+#team .title h2{
     color: var(--light-color);
 }
-#insta .title h2::after{
+#team .title h2::after{
     background-color: var(--light-color);
 }
-.insta-grid > div{
+.team-grid > div{
     height: 400px;
     overflow: hidden;
     transition: var(--transition);
 }
-.insta-grid > div img{
+.team-grid > div img{
     height: 100%;
     object-fit: cover;
 }
-.insta-grid > div:hover{
+.team-grid > div:hover{
     transform: scale(0.9);
 }
 
@@ -303,14 +303,14 @@ h1, h2, h3{
     .work-bottom{
         grid-template-columns: repeat(4, 1fr);
     }
-    .portfolio-grid{
+    .photo-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-    .portfolio-grid > div{
+    .photo-grid > div{
         height: 300px;
         overflow: hidden;
     }
-    .portfolio-grid > div img{
+    .photo-grid > div img{
         height: 100%;
         object-fit: cover;
     }
@@ -345,28 +345,28 @@ h1, h2, h3{
     .contact-left{
         width: 50%;
     }
-    .insta-grid{
+    .team-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media(min-width: 992px){
-    .insta-grid{
+    .team-grid{
         grid-template-columns: repeat(4, 1fr);
     }
-    .insta-grid > div{
+    .team-grid > div{
         height: 250px;
     }
 }
 
 @media(min-width: 1200px){
-    .portfolio-grid{
+    .photo-grid{
         grid-template-columns: repeat(3, 1fr);
     }
-    .portfolio-grid > div:nth-child(2){
+    .photo-grid > div:nth-child(2){
         grid-column: 2 / 4;
     }
-    .portfolio-grid > div:nth-child(6){
+    .photo-grid > div:nth-child(6){
         grid-column: 1 / 3;
     }
 }
